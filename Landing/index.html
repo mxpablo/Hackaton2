@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Posadas</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<!-- navegacion -->
+    <nav class="navbar navbar-expand-sm navbar-light" id="navegacion" style="background-color: #FFFFFF;">
+          <a id="logo" href="#">
+            <img src="posadas.jpg" class="logo" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <form class="form-inline my-2 my-md-0">
+             <input class="form-control" id="barra-busqueda" type="text" placeholder="Search">
+          </form>
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto links-navegacion">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Posadas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mapa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mensajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Invitar</a>
+              </li>
+            </ul>  
+          </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://fthmb.tqn.com/E8UfMR2wf_gGKXwGRRMqpLOmjro=/960x0/filters:no_upscale()/posada_getty-56a3ea873df78cf7727fdd52.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block titulo-carrusel1">
+            <h3>AMIGOS</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://ciudadviva.mx/wp-content/uploads/2015/12/sobrevive-a-las-posadas.png" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block titulo-carrusel2">
+            <h3>FIESTA</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://www.neostuff.net/wp-content/uploads/2015/12/las-posadas-navidenas-se-estan-extinguiendo.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block titulo-carrusel3">
+            <h3>PIÑATAS</h3>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Botones de filtros -->
+    <div class="row filtros justify-content-center">
+      <div class="contenido-filtros">
+        <button type="button" class="btn btn-outline-secondary">Mis posadas</button>
+        <button type="button" class="btn btn-outline-secondary">Cerca de mi</button>
+        <button type="button" class="btn btn-outline-secondary">Anfitrion</button>
+        <button type="button" class="btn btn-outline-secondary">Lugar</button>
+        <button type="button" class="btn btn-outline-secondary">Fecha</button>
+        <button type="button" class="btn btn-outline-secondary">Más filtros</button>
+      </div>
+    </div>
+
+    <!-- principal -->
+    <div class="row">
+      <div class="col-12 posadas">
+          <div class="row">
+            <div class=" container justify-content-end ordenar-por">
+              <span>Ordenar por  <a href="#">Más cercanas</a></span>
+            </div>
+          </div>
+          <div class="container">
+            <div class="lugares">
+
+              <!-- tarjeta 1 -->
+                <div class="card">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t31.0-8/22338899_1531172553643330_6243075818845996020_o.jpg?_nc_eui2=v1%3AAeFIF-YgbbYdvGyo1KK0Impd7XzHQx8CgiI66IwVksasRhv4-ACoBrQoKZ8uFDl8rx7cEp1jHsABzRQw4DmnI2jwAa7NGjbVEpzPyfle0jAplg&oh=ca6677f0f038c4842d0755280a45f4bb&oe=5A91B7AC" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t1.0-9/23795911_1575969082497010_2858166058063274600_n.jpg?_nc_eui2=v1%3AAeETmIxwm5KosFo6Kb18HHda8Jk3VPP-MeuuBNcMw8TtHJRwXZ4nQarQxqzn4CYQ1YUBNa4Bo4MxUjGE4mZn0BA64okXs6gJ_7FgF9numXULuw&oh=1f6c8a083c1fb06b3761ba47826a22b3&oe=5AD4B433" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t1.0-9/23795579_1575969005830351_1714243169727134742_n.jpg?_nc_eui2=v1%3AAeH8EBe0PNwgZirZTV4Xc502P0t99TxvMBQ0vppCUNzDbZMPS5Vw8cqhAJdOcAN3aSL6rgvsrgzS0_paWnDUP2A7uyL5dXTB1zXuA0Wah9PY7g&oh=b56ecd0380ad64a744559fc297099068&oe=5A9CC61F" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title descripcion1">Evento cerrado para Hubsters</h4>
+                    <h4 class="card-title descripcion2">Posada IMPACT HUB</h4>
+                    <p class="card-text">A <a href="">3.5 KM</a> de mi ubicación</p>
+                    <div class="calificacion align-items-center">
+                      <div class="estrellas">
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                      </div>
+                      <div class="numero-estrellas">
+                        <span>38 · Impact Hub</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- tarjeta 2 -->
+                <div class="card">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t31.0-8/23826123_933242706833266_1867090787701445958_o.jpg?_nc_eui2=v1%3AAeHbWJCfnapzDQueM1k0G94whvvqGH_qt8viZ8NIlUCAVZ81JLtv8njBBRQm6X7co1OPoXw7SGHqfGM5wvtOSTg05aAYKP0gCQSCm8GieCk7Vg&oh=89986ddfeb88aced5cc230551c7be236&oe=5A8907B9" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t31.0-8/23154797_1556361571124428_8712258871686618741_o.jpg?_nc_eui2=v1%3AAeHtg3PU5V4wdZ6G2RaH6t_pbGUfP3ZgJX4aFo1AZOqh48l5n8rp3FtJ-_jVkdM9tBoEP_KwLYKYxsc9n16TbbYi0o6pkk_dznjR-FoNTRfH4g&oh=e2ad5d69acb15fd2e7bfa905c0a47d66&oe=5AD56EAE" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t31.0-8/23004634_1556361574457761_3363896362148478896_o.jpg?_nc_eui2=v1%3AAeEa5GRC6pC_5nQed25FPdVkqPN1Z8q8U3QnlJUYf5yX4NYV_1-O2v9ticJl1kFcc_iDx7ZW6tSlWbQB-UFXsikpUMpbllD6a9OgiCtZUS-hcg&oh=6959d31cb988a0313169d50ea9ad721e&oe=5AD0A0B0" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title descripcion1">Evento de entrada gratuita</h4>
+                    <h4 class="card-title descripcion2">Pre-posada del Colectivo</h4>
+                    <p class="card-text">A <a href="">10 KM</a> de mi ubicación</p>
+                    <div class="calificacion align-items-center">
+                      <div class="estrellas">
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons estrella-blanca">star_rate</i>
+                      </div>
+                      <div class="numero-estrellas">
+                        <span>24 · Colectivo Cine Social</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- tarjeta 3 -->
+                <div class="card">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="http://ciudadviva.mx/wp-content/uploads/2015/12/sobrevive-a-las-posadas.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t1.0-9/23795748_1478227255586842_2578328493230362054_n.jpg?_nc_eui2=v1%3AAeHiOFJhtMVI5l1oPISmfzbApLBIrvr-ByIsacr7ffCOTx5SLRvyqg_MeOxYnIK099Y1_3p6ECAVchbsSdKAt37MwkvPbfzFVFpbUDzi58832g&oh=76bcfd49b8b4c284f2b6c1b80112e4f4&oe=5A9A5309" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t31.0-8/14712988_1097656076977297_3125678290154339438_o.png?_nc_eui2=v1%3AAeHtAeBBpzwWxBSber4EYCN3H--0a3ueobCxp6rWyy6gVMkcjUI9qJhktne-hUpGHyAJY8AA1n6gRweveAgmnH3U4rlsKitGw_VIopJY-pG1OQ&oh=712b4d664b055dd18adeea321b0ad894&oe=5AD3FED1" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title descripcion1">Cerrado para estudiantes IDS</h4>
+                    <h4 class="card-title descripcion2">Posada IDS 2017</h4>
+                    <p class="card-text">A <a href="">7.2 KM</a> de mi ubicación</p>
+                    <div class="calificacion align-items-center">
+                      <div class="estrellas">
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons estrella-blanca">star_rate</i>
+                        <i class="material-icons estrella-blanca">star_rate</i>
+                      </div>
+                      <div class="numero-estrellas">
+                        <span>38 · SAIDS Campus Monterrey</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- tarjeta 4 -->
+                <div class="card">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t1.0-9/12985350_483069891884005_3372523796912035905_n.png?_nc_eui2=v1%3AAeGENRPZ4G2nnDhdUaeKvMxkcdyfPOiTDd0F8WjoB8dDAD2Ad818QRMT_UexiZj-A7jsJK_XCrNL99sj8GIUVWUUET4EL0Ilv7wEee2pArYfWw&oh=0bf1a61696f4718d2a4860506ae39c79&oe=5A9575C1" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t31.0-8/21994262_714799358711056_7966121387992161638_o.jpg?_nc_eui2=v1%3AAeGClqbzc6soo7cdwhYr4lSLl92dVwUUcasNO0cMq3cB4oQnQbwzIeem1cXX9GJgxELS_rCukrPywdCEWvlx1NbcXpeyaAO4CGFPChdvpQwx_g&oh=89389475967ebcd3eca592814be112f5&oe=5AD0E8E4" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t31.0-8/22136920_714799815377677_4316306485515664987_o.jpg?_nc_eui2=v1%3AAeFaprA61Gx93RyyMHUj3KcWLCFaJiahUMFlC60zDkosRNuIgmidW7JRgHv9-QF8MSDoNUZm6FzZ7fTJwhB2_oQ0k-Jt_-vZ6OX2_tbyb_z2_g&oh=7d41d26d8c6ebdae7c7d16625ed20cae&oe=5A896CD9" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title descripcion1">Evento abierto al público</h4>
+                    <h4 class="card-title descripcion2">Posada FUCK UP NIGHTS</h4>
+                    <p class="card-text">A <a href="">800 metros</a> de mi ubicación</p>
+                    <div class="calificacion align-items-center">
+                      <div class="estrellas">
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons estrella-blanca">star_rate</i>
+                      </div>
+                      <div class="numero-estrellas">
+                        <span>153 · FUN Queretaro</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- tarjeta 5 -->
+                <div class="card">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t1.0-9/1545801_208423032679116_2140724451_n.png?_nc_eui2=v1%3AAeGuh11r83E2ehmsL16YNhSTcn3C6p2ADdKVdslfPFCBb90cmEV0DoOGb6Pr9G_6nLdZWFwHUThw1LNCSyCelNL8I8G5sfCHQEhhhWi6yJyG-Q&oh=7bada837bdf2e343d0e69d5f0dee47b4&oe=5A90B014" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t31.0-8/22770540_755812214606859_1473824952421096025_o.jpg?_nc_eui2=v1%3AAeF3gNHjbR2W4NunP-sLrdaJX_mfKlqJFky86-A9w4DTt-kpa0ZRrFMZZPnUeZm_q8pd2zPXhTIxDNgPYs4E3jj7EsfGjbKfWOXzQUr_k3iC8Q&oh=21d5af9155040d555a698aa153f0ae52&oe=5AD2FC19" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t31.0-8/22828996_755708851283862_2211030027852509315_o.jpg?_nc_eui2=v1%3AAeHvYp5sg73BfMWE3C10jjQUWmLPyJ7VLiIR5JCh17YcWBZW22AgGK6hZyBDQr5Clql97mxOBD1rOGyARx1-pPlNttR0Umj0XEbtenCI3sTABA&oh=8a2c27e3177b1539e00b80519aa33de3&oe=5A90A2CA" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title descripcion1">Evento abierto para comunidad HF</h4>
+                    <h4 class="card-title descripcion2">Hackers / Founders CDMX - posada</h4>
+                    <p class="card-text">A <a href="">3.5 KM</a> de mi ubicación</p>
+                    <div class="calificacion align-items-center">
+                      <div class="estrellas">
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                      </div>
+                      <div class="numero-estrellas">
+                        <span>84 · Hackers / Founders CDMX</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- tarjeta 6 -->
+                <div class="card">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t1.0-9/23244588_1561731583920760_2263556633363572264_n.jpg?_nc_eui2=v1%3AAeG3ma-15zejmIwTGh6jIDKifCJDqVvMciF-RmgTfUbKxZWL90BKdsqpD00aulhBwEgGwGzq34oyz8a2qcrc75-RlGeNIQSu7tiIu6DjcL9XGg&oh=7e90381f378919348786ed07f2a4349e&oe=5A88E9B8" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t1.0-9/23843275_1575969052497013_3158216423147948015_n.jpg?_nc_eui2=v1%3AAeEPvQ_gi_3tsgqG-xdHDmylTjuXm3Bod1JskMTXqebST6HBsR480pncsgBWF8liGumQZBtct5nvdez5Rbpe_CqC2zkBfLXTPn1WrJ3iEsvo4g&oh=43b7eb48305d64cb1818e59942830921&oe=5A8E52E3" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://scontent.fmex8-1.fna.fbcdn.net/v/t1.0-9/23472352_1561731920587393_3870322829100739857_n.jpg?_nc_eui2=v1%3AAeEijgZQFZwseamq6Dg2btg1fy1o7b23UNHdPcR5zuIrPM0eDNVnz1eqB2XtAL1bIWqhBSRHqWA2Ek8SFjCz_16nFQXpMNH4mdWct0oEWQcq0g&oh=32fd512a0e598e92723100b73295482c&oe=5AC9D8FE" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title descripcion1">Evento abierto al publico</h4>
+                    <h4 class="card-title descripcion2">Posada SURA - Camino al 2030</h4>
+                    <p class="card-text">A <a href="">3.5 KM</a> de mi ubicación</p>
+                    <div class="calificacion align-items-center">
+                      <div class="estrellas">
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons">star_rate</i>
+                        <i class="material-icons estrella-blanca">star_rate</i>
+                      </div>
+                      <div class="numero-estrellas">
+                        <span>19 · SURA</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+
+
+<!-- 
+    nombre
+    ubicacion
+    fecha
+    hora -->
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

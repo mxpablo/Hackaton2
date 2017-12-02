@@ -1,0 +1,135 @@
+/*Navegacion*/
+#logo{
+	padding-right: 50px;
+	padding-left: 80px;
+}
+
+.logo{
+	width: 130px;
+}
+
+#navegacion{
+	padding: 10px;
+	border-bottom: 1px solid #dedede;
+}
+
+#barra-busqueda{
+	width: 570px;
+	height: 50px;
+}
+
+.links-navegacion{
+	padding-left: 300px;
+}
+
+/*carrusel*/
+#carouselExampleControls{
+	height: 500px;
+	overflow: hidden;
+}
+
+.titulo-carrusel1 h3{
+	font-size: 120px;
+	margin-bottom: 60%;
+	
+}
+
+.titulo-carrusel2 h3{
+	font-size: 120px;
+	margin-bottom: 60%;
+	
+}
+
+.titulo-carrusel3 h3{
+	font-size: 120px;
+	margin-bottom: 37%;
+	
+}
+
+/*Filtros*/
+.filtros{
+	border-bottom: 1px solid #dedede;
+	width: 100%;
+}
+
+.contenido-filtros{
+	padding: 12px 0 12px 40px;
+}
+
+.btn{
+	margin: 0 8px;
+}
+
+/*Principal*/
+/*opciones de hospedaje*/
+.posadas{
+	/*border: 2px solid;*/
+}
+
+.ordenar-por{
+	padding: 20px 0 10px 0;
+	/*border: 2px solid red;*/
+}
+
+.lugares{
+	margin: 0px 15px;
+}
+
+.card{
+	border-radius: 6px;
+	width: 305px;
+	border: 0px solid;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	margin: 20px 26px;
+}
+
+.card-body{
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+#carouselExampleIndicators{
+	height: 210px;
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.card-title{
+	margin: 0;
+}
+
+.card-text{
+	margin: 0;
+}
+
+.descripcion1{
+	font-size: 12px;
+}
+
+.descripcion2{
+	font-size: 20px;
+}
+
+.calificacion{
+	display: flex;
+	flex-direction: row;
+}
+
+.material-icons{
+	font-size: 12px;
+	width:7px;
+	color: #008489;
+}
+
+.estrella-blanca{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.numero-estrellas{
+	margin-left: 8px;
+	font-size: 15px;
+}
