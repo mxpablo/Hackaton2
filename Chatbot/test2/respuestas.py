@@ -7,7 +7,21 @@ class Respuestas():
 		"id":sender_id
 		},
 		"message":{
-		"text":"Holi333"
+		"text":"Saludo"
+			}
+		}
+
+		URL = "https://graph.facebook.com/v2.6/me/messages?access_token=EAAFISPRZAHBMBAMcjw3xkHX8ZC1RrgJ7qD0X98JtuCZCbTnTAG3SQjCZBAMPoGCJ9553Vz59zZBzynFaEYHo3T704cxxv1AtvH5isodBcucXenS4R9oNanT1SBbUTSFw0wZBPwbbBAdXHOOOHdx92GF58YGCaDnpi4Dj0lDGOIBQZDZD"
+		respuesta = requests.post(URL, json = JSON)
+		return respuesta, 200
+
+	def ir(self, sender_id):
+		JSON = {"messaging_type":"RESPONSE",
+		"recipient":{
+		"id":sender_id
+		},
+		"message":{
+		"text":"Tu asistencia está confirmada"
 			}
 		}
 
@@ -21,7 +35,7 @@ class Respuestas():
 		"id":sender_id
 		},
 		"message":{
-		"text": "Here's a quick reply!",
+		"text": "Muestrame las posadas",
 		"quick_replies":[
 		{
 		"content_type":"text",
@@ -46,6 +60,21 @@ class Respuestas():
 		return True, 200
 
 	def generics(self, sender_id):
+
+		URL = "https://f4a27278.ngrok.io/api/v1/posada"
+		response = requests.get(URL)
+		numero_posadas = response.json()
+
+		lista = []
+		for x in numero_posadas:
+			lista.append(
+			{
+			'title': x['nombre'],
+			'image_url': x['imagen'],
+			'subtitle': x['telefono'],
+			'buttons':[{'type': 'postback', 'title':'Quiero ir', 'payload': 220}]
+			})
+
 		JSON = {
 		"recipient":{
 		"id":sender_id
@@ -55,18 +84,7 @@ class Respuestas():
 		"type":"template",
 		"payload":{
 		"template_type":"generic",
-		"elements":[
-		{'title': 'Cotizar',
-		'image_url': "https://www.anipedia.net/imagenes/caracteristicas-generales-de-los-gatos.jpg",
-		'subtitle': 'Cotiza tu envío',
-		'buttons':[{'type': 'postback', 'title':'Quiero cotizar', 'payload': 220}]
-		},
-		{'title': 'Cotizar',
-		'image_url': "https://www.anipedia.net/imagenes/caracteristicas-generales-de-los-gatos.jpg",
-		'subtitle': 'Cotiza tu envío',
-		'buttons':[{'type': 'postback', 'title':'Quiero cotizar', 'payload': 220}]
-		}
-		]
+		"elements": lista
 		}
 		}
 		}
