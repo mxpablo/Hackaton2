@@ -19,18 +19,23 @@ def webhook():
 		mensaje = request.json
 		print(mensaje)
 
+
+
 		for evento in mensaje['entry']:
 			messaging = evento['messaging']
 			for event_message in messaging:
 				sender_id = event_message['sender']['id']
+				
+
 				try:
 					message = event_message['message']['text']
 					pln = event_message['message']['nlp']['entities']['intent'][0]['value']
 				except:
-					message = "HOLA"
+					message = 'HOLA'
 
-				print(message + ' por ' + sender_id + str(pln))
+				print(message + ' por ' + sender_id)
 				respuestas = Respuestas()
+				print(event_message)
 				
 				if message.upper() == 'HOLA':
 					respuestas.saluda(sender_id)
@@ -40,7 +45,14 @@ def webhook():
 					respuestas.generics(sender_id)
 				elif pln.upper() == 'QUIERO':
 					respuestas.pln(sender_id)
+				elif respuestas.upper() == 'QUIERO IR':
+					respuestas.ir(sender_id)
+
+
+
 		return 'ok'
+
+
 
 	elif request.method == 'GET':
 		if request.args.get('hub.verify_token') == VERIFY_TOKEN:
